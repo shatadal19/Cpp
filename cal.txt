@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a;
+    float x,y;
+    cout<<"Enter Your First number: ";
+    cin>>x;
+    cout<<"Enter Your operation: ";
+    cin>>a;
+    cout<<"Enter Your Second number: ";
+    cin>>y;
+    switch(a){
+        case '+':
+        cout<<"Result = "<<x<<a<<y<<"="<<x+y;
+        break;
+        case '-':
+        cout<<"Result = "<<x<<a<<y<<"="<<x-y;
+        break;
+        case '*':
+        cout<<"Result = "<<x<<a<<y<<"="<<x*y;
+        break;
+        case '/':
+        cout<<"Result = "<<x<<a<<y<<"="<<x/y;
+        break;
+        default:
+        cout<<"Your operation is invalid.";
+        break;
+    }
+    
+   return 0;
+}
